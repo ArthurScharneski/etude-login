@@ -7,9 +7,10 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/cidade.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,16 +22,17 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 1.2rem;
-    background-color: #92a59277;
-    padding: 2rem;
+    background-color: #41414177;
+    /* padding: 1rem; */
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     align-self: center;
     margin-bottom: 1.5rem;
-    text-shadow: 3px 2px rgba(14, 14, 14, 0.301);
+    text-shadow: 3px 2px 10px rgb(2, 255, 255);
     letter-spacing: 0.5rem;
+    color: rgb(1, 17, 17);
 }
 
 .login {
@@ -41,8 +43,7 @@ h1 {
 .login-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0.9rem;
 }
 
 .login-form label {
@@ -50,22 +51,28 @@ h1 {
     margin-bottom: .5rem;
     font-size: 1.2rem;
     letter-spacing: .2rem;
+    color: rgb(2, 61, 61);
+    text-shadow: 1px 1px 0px rgb(2, 255, 255);
 }
 
 .login-form input {
+    display: block;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid black;
     outline: none;
     margin-bottom: .4rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: normal;
-    color: rgba(163, 230, 163, 0.788);
     transition: 0.4s;
+    padding: 0 .1rem;
 }
 
 input::placeholder {
-    color: #d6b262;
+    color: rgb(31, 28, 22);
+    text-shadow: 1px 1px rgb(255, 233, 169);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.1em;
     font-style: italic;
@@ -76,19 +83,33 @@ input:focus {
     transition: 0.4s;
 }
 
+a {
+    color: rgb(230, 190, 116);
+    text-decoration: none;
+}
+
 .login a {
     text-align: end;
-    margin: 1rem .3rem;
     font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    transition: 0.5s;
+}
+
+.login a:hover {
+    transition: 0.5s;
+    scale: 120%;
+    margin-right: 2rem;
 }
 
 button {
+    font-family: 'Times New Roman', Times, serif;
     width: 80%;
     margin: 0 auto;
     padding: .5rem;
     border: none;
     border-radius: 1.5rem;
-    background: linear-gradient(180deg, rgba(1, 109, 1, 0.788), rgba(42, 165, 42, 0.753), rgba(1, 109, 1, 0.788));
+    background: #7fffd4;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     box-shadow: 2px 2px 8px rgb(172, 206, 121);
@@ -116,6 +137,15 @@ footer p {
     margin-top: 1.2em;
 }
 
+footer a {
+    transition: 0.5s;
+}
+
+footer a:hover {
+    scale: 130%;
+    transition: 0.5s;
+}
+
 .icons {
     display: block;
     width: 100%;
@@ -123,19 +153,15 @@ footer p {
     justify-content: space-evenly;
 }
 
-a {
-    color: #382020;
-}
-
 .icons i {
     display: block;
     font-size: 1.5rem;
     transition: 0.5s;
+    color: aquamarine;
 }
 
-.icons i:hover,
-a:hover {
-    color: rgb(184, 184, 184);
+.icons i:hover {
+    color: rgb(252, 240, 217);
     transition: 0.5s;
     scale: 120%;
 }
